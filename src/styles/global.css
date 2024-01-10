@@ -1,3 +1,11 @@
 .time-line-container>div:last-child .education__time>.education__line {
     display: none;
 }
+
+@font-face {
+    font-family: 'Karla-Regular';
+    src: url('/fonts/Karla-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }

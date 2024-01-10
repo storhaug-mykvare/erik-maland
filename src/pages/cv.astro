@@ -1,92 +1,199 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
+  <div class="text-5xl font-bold prose">CV</div>
+
+  <div class="text-3xl py-3">Profile</div>
+
+  <div class="mb-10 prose text-large text-justify">
+    <p>
+      Web developer and entrepreneur with a experience with a broad specter of
+      technologies. Have founded a handful of successful IT-services, and
+      followed them from an initial vision to a running enterprise system in
+      production.
+    </p>
+    <p>
+      For service enquiries, please contact my employer, Storhaug Mykvare AS.
+    </p>
   </div>
 
-  <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </div>
+  <div class="text-3xl py-3">Key skills</div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
-  </div>
+  <ul class="list-disc mx-6 mb-10">
+    <li>Experienced web developer</li>
+    <li>Master's degree in Informatics</li>
+    <li>Founder of multiple services and companies</li>
+    <li>
+      Passionate about realising good (and sometimes bad) ideas, to working
+      product and beyond
+    </li>
+  </ul>
 
-  <div class="time-line-container grid gap-4 mb-10">
+  <div class="text-3xl py-3">Education</div>
+
+  <div class="time-line-container grid mb-10">
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
+      title="Master of Science, Informatics "
+      subtitle="2013 - 2015, University of Bergen, Norway"
+    >
+      <div class="prose">
+        <p>
+          Spesialization in Algorithms at the Institute of Informatics. The
+          degree was awarded with the highest grade, A,
+          <a
+            class="link"
+            href="https://scholar.google.com/scholar?cites=11949667352679866860&as_sdt=2005&sciodt=0,5&hl=no"
+          >
+            and has been cited in numerous scientific journals
+          </a>.
+        </p>
+        <p>
+          The master's degree can be read <a
+            class="link"
+            href="https://bora.uib.no/bora-xmlui/handle/1956/9951"
+          >
+            here
+          </a>.
+        </p>
+      </div>
+    </TimeLineElement>
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
+      title="Bachelor of Science, Informatics "
+      subtitle="2011 - 2013, University of Bergen, Norway"
+    >
+      <div class="prose">
+        <p>Bachelor's degree at the Institute of Informatics.</p>
+      </div>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Bachelor of Science, Physics "
+      subtitle="2018 - 2011, University of Bergen, Norway"
+    >
+      <div class="prose">
+        <p>
+          Bachelor's degree at the Institute of Physics, focusing on Particle
+          Physics.
+        </p>
+      </div>
+    </TimeLineElement>
   </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
-  </div>
+  <div class="text-3xl py-3">Experience</div>
 
   <div class="time-line-container mb-10">
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+    <TimeLineElement title="CEO" subtitle="2020 - Current, Storhaug Mykvare AS">
+      <div class="prose">
+        <p class="prose">
+          Creating excellent user experiences for our customers.
+        </p>
+      </div>
     </TimeLineElement>
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Developer and Tech Lead"
+      subtitle="2020 - 2023, Equinor ASA"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      <div class="prose">
+        <p>Hired from Storhaug Mykvare AS.</p>
+        <p>
+          The team was called DPL (De-bottleneck and Produce to Limits), and is
+          a part of IOC (Integrated Operations Centre), a new digitalization
+          initative of Equinor.
+        </p>
+        <p>
+          Our main product was an app called Almond. This app visualizes
+          realtime data from off-shore installations. It is used for
+          surveillance and detection of anomalies by on-shore engineers.
+        </p>
+        <p>
+          The front-end was a React app, with a Django Python backend. It was
+          also supported by auxillary service, created and maintained by us.
+          This included a custom cache and a data warehouse.
+        </p>
+      </div>
+    </TimeLineElement>
+    <TimeLineElement title="CEO" subtitle="2020 - 2021, Almås & Måland AS">
+      <div class="prose">
+        <p>Co-founded the company, which delivered design- and IT-services.</p>
+        <p>
+          We mainly delivered web-sites and web-apps. A selection sites we
+          created: did:
+          <ul>
+            <li>
+              <a class="link" href="https://satyayoga.no/"> Satya Yoga</a>
+            </li>
+            <li>
+              <a class="link" href="https://fevangsbarberstue.com/"
+                >Fevangs Barberstue
+              </a>
+            </li>
+            <li>
+              <a class="link" href="https://bjella-investments.no/">
+                Bjella Investments
+              </a>
+            </li>
+            <li>
+              <a class="link" href="https://cutthecrapfris%C3%B8r.no/">
+                Cut the Crap Frisør
+              </a>
+            </li>
+          </ul>
+        </p>
+      </div>
     </TimeLineElement>
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Developer"
+      subtitle="2017 - 2020, Skagen Fondene AS"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      <div class="prose">
+        <p>
+          Skagen Fondene manages a wide selection of equity funds, on behalf of
+          their customers. My team developed and maintained the platform
+          supporting this activity.
+        </p>
+        <p>
+          This included both back- and front-end work, as well as data
+          warehouse. The platform was implemented as a collection of Java Spring
+          microservices. As an end-customer, one would be exposed to this
+          platform through an Angular web-app.
+        </p>
+        <p>
+          Skagen Fondene was acquired by Storebrand in 2018. They decided to use
+          our platform for their expansion into equity funds. This triggered a
+          migration project for my team, to adapt the system to Storebrands
+          customers and employees. This project was finished in the fall of
+          2019.
+        </p>
+      </div>
+    </TimeLineElement>
+    <TimeLineElement title="Developer" subtitle="2015 - 2017, Futurehome AS">
+      <div class="prose">
+        <p>
+          The company developed and sold a hub for connecting and controlling
+          IoT devices through a mobile app.
+        </p>
+        <p>
+          My main responsibility was writing the control software running on the
+          hub that the devices are connected to. This consisted of a chip with
+          antennas, running a version of Debian Linux tailored to our specific
+          needs. The software was writtin in C++.
+        </p>
+        <p>
+          Futurehome was still in its early stages when I was hired as a
+          developer. We went through 2 emissions, bringing new ownwers and funds
+          into the company.
+        </p>
+        <p>
+          The hub is now a well established in the Norwegian market for consumer
+          electronics. <a
+            class="link"
+            href="https://www.tek.no/test/i/Ad4JME/norske-futurehome-byr-paa-mange-gode-loesninger"
+            >It was praised in the tech-magazine Tek.no</a
+          >
+        </p>
+      </div>
     </TimeLineElement>
   </div>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
-  </div>
-
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-  </ul>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
-  </div>
-
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-  </ul>
 </BaseLayout>
